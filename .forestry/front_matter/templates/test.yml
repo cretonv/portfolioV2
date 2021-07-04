@@ -17,4 +17,4 @@ fields:
       format: markdown
   label: Description
 pages:
-- test/Test-file.md
+- content/test/Test-file.md
