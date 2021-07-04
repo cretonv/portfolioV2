@@ -17,4 +17,5 @@ fields:
       format: markdown
   label: Chapô
 pages:
+- content/articles/mon-deuxieme-article.md
 - content/articles/mon-premier-article.md
