@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <div class="content">
+      <SideInfos />
       <IconLogo class="logo" />
       <div class="left-part">
         <div class="text-content">
@@ -23,13 +24,14 @@
 <script>
 import IconLogo from '@/components/IconLogo'
 import HomeIllustration from '@/components/HomeIllustration'
+import SideInfos from '@/components/SideInfos'
 export default {
   head: {
     bodyAttrs: {
       class: 'no-margin'
     }
   },
-  components: { IconLogo, HomeIllustration },
+  components: { IconLogo, HomeIllustration, SideInfos },
   data () {
     return {
       subtitle: 'Creative developer.',
