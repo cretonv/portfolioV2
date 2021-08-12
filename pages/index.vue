@@ -12,6 +12,10 @@
           <div class="chapo">
             {{ chapo }}
           </div>
+          <div class="btn-line">
+            <ButtonDefault link-to="#" icon-name="github" text-content="GitHub" />
+            <ButtonDefault link-to="#" icon-name="palette" text-content="Mes projets" />
+          </div>
         </div>
       </div>
       <div class="right-part">
@@ -25,13 +29,14 @@
 import IconLogo from '@/components/IconLogo'
 import HomeIllustration from '@/components/HomeIllustration'
 import SideInfos from '@/components/SideInfos'
+import ButtonDefault from '@/components/ButtonDefault'
 export default {
   head: {
     bodyAttrs: {
       class: 'no-margin'
     }
   },
-  components: { IconLogo, HomeIllustration, SideInfos },
+  components: { IconLogo, HomeIllustration, SideInfos, ButtonDefault },
   data () {
     return {
       subtitle: 'Creative developer.',
@@ -93,6 +98,16 @@ export default {
         font-size: 21px;
         font-weight: 300;
         max-width: 405px;
+      }
+      .btn-line {
+        margin-top: 24px;
+        display: flex;
+        flex-flow: row nowrap;
+        a {
+          &:not(:first-of-type){
+            margin-left: 40px;
+          }
+        }
       }
     }
   }
