@@ -140,8 +140,17 @@
 </template>
 
 <script>
+import { gsap } from 'gsap'
 export default {
-  name: 'HomeIllustration'
+  name: 'HomeIllustration',
+  mounted () {
+    gsap.timeline({ repeat: -1 }).add().fromTo('#logo-javascript', { y: 1 }, { y: 25, duration: 3, ease: 'none' }).fromTo('#logo-javascript', { y: 25 }, { y: 1, duration: 3, ease: 'none' })
+    gsap.timeline({ repeat: -1 }).add().fromTo('#sketch-2', { y: 1 }, { y: 18, duration: 3.2, ease: 'none' }).fromTo('#sketch-2', { y: 18 }, { y: 1, duration: 3.2, ease: 'none' })
+    gsap.timeline({ repeat: -1 }).add().fromTo('#php-1', { yPercent: 0 }, { yPercent: 50, duration: 2.9, ease: 'none' }).fromTo('#php-1', { yPercent: 50 }, { yPercent: 0, duration: 2.9, ease: 'none' })
+    gsap.timeline({ repeat: -1 }).add().fromTo('#vue-js-1', { yPercent: 0 }, { yPercent: 70, duration: 3, ease: 'none' }).fromTo('#vue-js-1', { yPercent: 70 }, { yPercent: 0, duration: 3, ease: 'none' })
+    gsap.timeline({ repeat: -1 }).add().fromTo('#swift-logo-with-text', { yPercent: 0 }, { yPercent: 40, duration: 2.7, ease: 'none' }).fromTo('#swift-logo-with-text', { yPercent: 40 }, { yPercent: 0, duration: 2.7, ease: 'none' })
+    gsap.timeline({ repeat: -1 }).add().fromTo('#wordpress-blue', { yPercent: 0 }, { yPercent: 50, duration: 3.2, ease: 'none' }).fromTo('#wordpress-blue', { yPercent: 50 }, { yPercent: 0, duration: 3.2, ease: 'none' })
+  }
 }
 </script>
 
