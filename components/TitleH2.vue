@@ -1,7 +1,7 @@
 <template>
   <div class="title-container">
     <img :src="require(`~/assets/img/titleSvg/${iconName}.svg`)" />
-    <h2>{{textValue}}</h2>
+    <h2>{{ textValue }}</h2>
   </div>
 </template>
 
