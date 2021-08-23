@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="51px" viewBox="0 0 51 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Title symbol</title>
+  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Home" transform="translate(-306.000000, -763.000000)">
+      <g id="Group-2" transform="translate(306.000000, 763.000000)">
+        <g id="Title-symbol">
+          <circle id="Oval" stroke="#979797" cx="25.5" cy="25.5" r="25"></circle>
+          <circle id="Oval" fill="#D8D8D8" cx="25.5" cy="25.5" r="2.48780488"></circle>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
