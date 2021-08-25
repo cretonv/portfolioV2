@@ -3,6 +3,7 @@
     <HomeLanding />
     <TitleH2 icon-name="sun" text-value="Mon travail" />
     <SymbolsLine :text-arrray="textArray"/>
+    <ProjectsHighlight :projects="projects" />
   </div>
 </template>
 
@@ -10,16 +11,25 @@
 import HomeLanding from '@/components/HomeLanding'
 import TitleH2 from '@/components/TitleH2'
 import SymbolsLine from '@/components/SymbolsLine'
+import ProjectsHighlight from '@/components/ProjectsHighlight'
 export default {
   head: {
     bodyAttrs: {
       class: 'no-margin'
     }
   },
-  components: { TitleH2, HomeLanding, SymbolsLine },
+  components: { TitleH2, HomeLanding, SymbolsLine, ProjectsHighlight },
   data: () => {
     return {
       textArray: ['Conception', 'UX Design', 'Développement', 'Team Lead']
+    }
+  },
+  async asyncData ({ $content }) {
+    const projects = await $content('projects').fetch()
+    // const sortProjects = [projects[0], projects[1], projects[2]]
+    return {
+      projects,
+      // sortProjects
     }
   }
 }

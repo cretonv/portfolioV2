@@ -25,7 +25,7 @@ export default {
   .title-container {
     position: relative;
     max-width: fit-content;
-    margin: 24px auto;
+    margin: 24px auto 48px;
 
     h2 {
       font-family: Playfair;
