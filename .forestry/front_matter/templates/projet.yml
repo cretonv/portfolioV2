@@ -1,4 +1,19 @@
 ---
 label: Projet
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Titre
+- name: project-type
+  type: text
+  config:
+    required: true
+  label: Type du projet
+- name: techno_line
+  type: text
+  config:
+    required: true
+  label: Ligne techno
