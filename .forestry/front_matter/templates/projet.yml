@@ -17,3 +17,8 @@ fields:
   config:
     required: true
   label: Ligne techno
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 64
+  label: Photo mise en avant
