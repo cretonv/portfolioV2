@@ -3,7 +3,7 @@
     <HomeLanding />
     <TitleH2 icon-name="sun" text-value="Mon travail" />
     <SymbolsLine :text-arrray="textArray"/>
-    <ProjectsHighlight :projects="projects" />
+    <ProjectsHighlight :projects="sortProjects" />
   </div>
 </template>
 
@@ -26,10 +26,10 @@ export default {
   },
   async asyncData ({ $content }) {
     const projects = await $content('projects').fetch()
-    // const sortProjects = [projects[0], projects[1], projects[2]]
+    const sortProjects = [projects[0], projects[1], projects[2]]
     return {
       projects,
-      // sortProjects
+      sortProjects
     }
   }
 }
