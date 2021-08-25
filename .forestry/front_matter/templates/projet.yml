@@ -7,7 +7,7 @@ fields:
   config:
     required: true
   label: Titre
-- name: project-type
+- name: project_type
   type: text
   config:
     required: true
@@ -24,3 +24,5 @@ fields:
   label: Photo mise en avant
 pages:
 - content/projects/en-silence.md
+- content/projects/qwwizzy.md
+- content/projects/storaix.md
