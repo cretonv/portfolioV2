@@ -9,6 +9,7 @@
         <div class="project-techno">
           {{ project.techno_line }}
         </div>
+        <ProjectSymbolColumn :conception="project.conception_label" :ux="project.ux_label" :development="project.development_label" :team-lead="project.team_lead_label" />
       </div>
       <img :src="require(`~/assets/uploads/${images[project.title]}`)">
     </div>
@@ -16,8 +17,10 @@
 </template>
 
 <script>
+import ProjectSymbolColumn from '@/components/ProjectSymbolColumn'
 export default {
   name: 'ProjectsHighlight',
+  components: { ProjectSymbolColumn },
   props: {
     projects: {
       type: Array,
