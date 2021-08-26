@@ -22,6 +22,18 @@ fields:
   config:
     maxSize: 64
   label: Photo mise en avant
+- name: conception_label
+  type: boolean
+  label: Conception
+- name: ux_label
+  type: boolean
+  label: UX Design
+- name: development_label
+  type: boolean
+  label: Développement
+- name: team_lead_label
+  type: boolean
+  label: Team lead
 pages:
 - content/projects/en-silence.md
 - content/projects/qwwizzy.md
