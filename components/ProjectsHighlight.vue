@@ -1,26 +1,30 @@
 <template>
-  <div class="project-highlight-line">
-    <div v-for="project in projects" :key="project.title" class="project-item">
-      <div class="content">
-        <h3>{{ project.title }}</h3>
-        <div class="project-type">
-          {{ project.project_type }}
+  <div>
+    <div class="project-highlight-line">
+      <div v-for="project in projects" :key="project.title" class="project-item">
+        <div class="content">
+          <h3>{{ project.title }}</h3>
+          <div class="project-type">
+            {{ project.project_type }}
+          </div>
+          <div class="project-techno">
+            {{ project.techno_line }}
+          </div>
+          <ProjectSymbolColumn :conception="project.conception_label" :ux="project.ux_label" :development="project.development_label" :team-lead="project.team_lead_label" />
         </div>
-        <div class="project-techno">
-          {{ project.techno_line }}
-        </div>
-        <ProjectSymbolColumn :conception="project.conception_label" :ux="project.ux_label" :development="project.development_label" :team-lead="project.team_lead_label" />
+        <img :src="require(`~/assets/uploads/${images[project.title]}`)">
       </div>
-      <img :src="require(`~/assets/uploads/${images[project.title]}`)">
     </div>
+    <ButtonDefault class="centered" icon-name="palette" link-to="#" text-content="Voir tout mes projets" />
   </div>
 </template>
 
 <script>
 import ProjectSymbolColumn from '@/components/ProjectSymbolColumn'
+import ButtonDefault from '@/components/ButtonDefault'
 export default {
   name: 'ProjectsHighlight',
-  components: { ProjectSymbolColumn },
+  components: { ProjectSymbolColumn, ButtonDefault },
   props: {
     projects: {
       type: Array,
@@ -41,6 +45,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.centered {
+  width: fit-content;
+  margin: 24px auto;
+}
 .project-highlight-line {
   display: flex;
   flex-flow: row nowrap;
