@@ -4,6 +4,8 @@
     <TitleH2 icon-name="sun" text-value="Mon travail" />
     <SymbolsLine :text-arrray="textArray"/>
     <ProjectsHighlight :projects="sortProjects" />
+    <TitleH2 icon-name="salt" text-value="À propos de moi" />
+    <Presentation />
   </div>
 </template>
 
@@ -12,13 +14,14 @@ import HomeLanding from '@/components/HomeLanding'
 import TitleH2 from '@/components/TitleH2'
 import SymbolsLine from '@/components/SymbolsLine'
 import ProjectsHighlight from '@/components/ProjectsHighlight'
+import Presentation from '@/components/Presentation'
 export default {
   head: {
     bodyAttrs: {
       class: 'no-margin'
     }
   },
-  components: { TitleH2, HomeLanding, SymbolsLine, ProjectsHighlight },
+  components: { TitleH2, HomeLanding, SymbolsLine, ProjectsHighlight, Presentation },
   data: () => {
     return {
       textArray: ['Conception', 'UX Design', 'Développement', 'Team Lead']
