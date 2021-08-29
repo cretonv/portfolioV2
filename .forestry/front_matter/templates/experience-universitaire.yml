@@ -22,4 +22,5 @@ fields:
       format: markdown
   label: Description
 pages:
+- content/formations/Bachelor Développeur interactif web & mobile - Gobelins.md
 - content/formations/Master Design & Management de l’innovation interactive - Gobelins.md
