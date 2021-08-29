@@ -9,6 +9,8 @@ sections:
   label: Expériences universitaire
   create: documents
   match: "**/*"
+  templates:
+  - experience-universitaire
 - type: directory
   path: content/projects
   label: Projet
