@@ -9,7 +9,8 @@ import {
   uniTimes,
   uniSync,
   uniGithub,
-  uniPalette
+  uniPalette,
+  uniGraduationCap
 } from 'vue-unicons/dist/icons'
 
 Unicon.add([
@@ -22,6 +23,7 @@ Unicon.add([
   uniTimes,
   uniSync,
   uniGithub,
-  uniPalette
+  uniPalette,
+  uniGraduationCap
 ])
 Vue.use(Unicon)
