@@ -1,4 +1,23 @@
 ---
 label: Expérience universitaire
 hide_body: true
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Nom
+- name: years
+  type: text
+  config:
+    required: true
+  label: Intervalle d'année
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description
