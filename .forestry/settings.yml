@@ -9,6 +9,8 @@ sections:
   label: Expériences professionnelle
   create: all
   match: "**/*"
+  templates:
+  - experience-universitaire
 - type: directory
   path: content/formations
   label: Expériences universitaire
